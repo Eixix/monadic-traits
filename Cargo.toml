@@ -6,12 +6,13 @@ license = "MIT"
 authors = ["Tobias Betz <tobiasbetz@hotmail.de>"]
 description = "Functor, Applicative and monad traits + nightly Try/? support"
 repository = "https://github.com/Eixix/monadic-traits"
+keywords = ["monad", "functor", "applicative", "fp", "functional"]
+categories = ["algorithms", "rust-patterns"]
 
 [features]
 default = ["nightly"]
 nightly = []
 
-[package]
-keywords = ["monad", "functor", "applicative", "fp", "functional"]
-categories = ["algorithms", "rust-patterns"]
-
+[package.metadata.docs.rs]
+features = ["nightly"]
+rustdoc-args = ["--cfg", "docsrs"]
