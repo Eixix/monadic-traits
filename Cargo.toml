@@ -3,6 +3,7 @@ name = "monadic-traits"
 version = "0.1.0"
 edition = "2024"
 license = "MIT"
+authors = ["Tobias Betz <tobiasbetz@hotmail.de>"]
 description = "Functor, Applicative and monad traits + nightly Try/? support"
 repository = "https://github.com/Eixix/monadic-traits"
 
@@ -10,4 +11,7 @@ repository = "https://github.com/Eixix/monadic-traits"
 default = ["nightly"]
 nightly = []
 
-[dependencies]
+[package]
+keywords = ["monad", "functor", "applicative", "fp", "functional"]
+categories = ["algorithms", "rust-patterns"]
+

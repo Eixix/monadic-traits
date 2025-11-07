@@ -1,9 +1,14 @@
 use crate::traits::{Applicative, Functor, Monad};
 use std::ops::{ControlFlow, FromResidual, Try};
 
-#[derive(Debug, PartialEq)]
+/// A simple `Option`-like monad used for FP learning and experimentation.
+///
+/// Supports the `?` operator via nightly `Try` and `FromResidual`.
+#[derive(Debug, Clone, PartialEq)]
 pub enum Maybe<T> {
+    /// A present value
     Just(T),
+    /// The absence of a value
     Nothing,
 }
 
