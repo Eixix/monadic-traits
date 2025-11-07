@@ -1,0 +1,13 @@
+[package]
+name = "monadic-traits"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+description = "Functor, Applicative and monad traits + nightly Try/? support"
+repository = "https://github.com/Eixix/monadic-traits"
+
+[features]
+default = ["nightly"]
+nightly = []
+
+[dependencies]
